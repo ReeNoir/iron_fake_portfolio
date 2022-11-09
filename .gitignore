@@ -1,3 +1,8 @@
-# gulp
-# .vscode
-# node_modules
+gulp
+.vscode
+node_modules
+src
+gulpfile.js
+package-lock.json
+package.json
+

@@ -31,7 +31,7 @@ export const path = {
         // html: `${srcFolder}/**/*.html`,
         html: `${srcFolder}/**/*.pug`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
-        files: `${srcFolder}/files/**/*.*`
+        files: `${srcFolder}/files/**/*.*`,
     },
     clean: buildFolder,
     buildFolder: buildFolder,

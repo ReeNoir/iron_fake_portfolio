@@ -3,9 +3,10 @@
 @import "nulling";
 @import "fonts";
 @import "variables";
+@import "container";
 
-// General
 
-@import "header/header"
+// Sections
 
-// Game
+@import "header/header";
+@import "main/main";

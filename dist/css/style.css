@@ -138,3 +138,92 @@ html, body {
 .main__about-me {
   margin: 5px;
 }
+
+.games {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #CCDBDC;
+}
+
+.games__item {
+  position: relative;
+}
+
+.games__trailer_box {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.games__trailer {
+  width: 100%;
+}
+
+.games__plug {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse closest-side, transparent, transparent 40%, #CCDBDC);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.games__interface {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  color: black;
+}
+
+.games__info {
+  margin: 30px;
+}
+
+.games__title {
+  display: block;
+  width: 70%;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.games__stats {
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+}
+
+.games__downloads {
+  padding: 0 35px;
+}
+
+.games__stars {
+  padding: 0 35px;
+  position: relative;
+}
+.games__stars ::after {
+  width: 1px;
+  height: 1.8rem;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: aliceblue;
+}
+
+.games__btn {
+  margin: 20px 100px;
+  padding: 7px 30px;
+  align-self: flex-end;
+  border: 2px solid #CCDBDC;
+  border-radius: 20px;
+  background-color: #007EA7;
+  font-size: 1.07rem;
+}

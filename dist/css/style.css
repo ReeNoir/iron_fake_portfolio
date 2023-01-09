@@ -28,7 +28,7 @@ html, body {
   height: 100vh;
   font-size: 100%;
   line-height: 1;
-  font-size: 16px;
+  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -81,7 +81,7 @@ html, body {
 
 .container {
   margin: 0 auto;
-  width: 1000px;
+  width: 1200px;
 }
 
 .nav {
@@ -207,7 +207,7 @@ html, body {
   padding: 0 35px;
   position: relative;
 }
-.games__stars ::after {
+.games__stars :after {
   width: 1px;
   height: 1.8rem;
   content: "";
@@ -215,7 +215,7 @@ html, body {
   right: 0;
   bottom: 0;
   z-index: 1;
-  background-color: aliceblue;
+  background-color: black;
 }
 
 .games__btn {

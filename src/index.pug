@@ -2,9 +2,10 @@ doctype html
 html(lang="en")
     include html/head
     body
-        include html/header
-        main.page
-            .container 
-                include html/games/game
+        .container
+            include html/header
+        .container
+            include html/main
+        include html/games/games
         include html/footer
         script(src="js/app.min.js") 

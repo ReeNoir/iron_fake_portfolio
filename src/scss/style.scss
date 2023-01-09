@@ -3,12 +3,11 @@
 @import "nulling";
 @import "fonts";
 @import "variables";
+@import "container";
 
-// General
 
-@import "main_page";
-@import "general";
+// Sections
 
-// Game
-
-@import "game/game";
+@import "header/header";
+@import "main/main";
+@import "games/games";

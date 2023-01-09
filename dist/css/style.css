@@ -143,10 +143,11 @@ html, body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #CCDBDC;
+  background-color: #3f4041;
 }
 
 .games__item {
+  margin: 50px 0;
   position: relative;
 }
 
@@ -163,7 +164,7 @@ html, body {
 .games__plug {
   width: 100%;
   height: 100%;
-  background: radial-gradient(ellipse closest-side, transparent, transparent 40%, #CCDBDC);
+  background: radial-gradient(ellipse closest-side, transparent, transparent 70%, #3f4041);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -179,7 +180,7 @@ html, body {
   left: 0;
   bottom: 0;
   z-index: 100;
-  color: black;
+  color: white;
 }
 
 .games__info {
@@ -215,7 +216,7 @@ html, body {
   right: 0;
   bottom: 0;
   z-index: 1;
-  background-color: black;
+  background-color: white;
 }
 
 .games__btn {

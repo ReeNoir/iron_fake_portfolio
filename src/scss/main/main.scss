@@ -1,39 +1,54 @@
 .main{
-    width: 100%;
-    height: 500px;
     display: flex;
-    font-size: 1.5rem;
+    margin-top: 100px;
 }
 
 .main__info{
-    width: 300px;
-    height: 250px;
-    margin: auto;
-    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
 }
 
 .main__greeting{
-    position: relative;
-    margin: 5px;
-    padding-bottom: 10px;
-    font-weight: 500;
-    :after{
-        content: "";
-        width: 100%;
-        height: 2px;
-        background-color: #000;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 1;
-    }
+    width: 550px;
+
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $font__greet;
 
     h1{
+        font-weight: 600;
         font-size: 2rem;
-        font-weight: 700;
     }
 }
 
 .main__about-me{
-    margin: 5px;
+    margin: 50px 0;
+    font-size: 0.95rem;
+    color: $font__about-me;
+    line-height: 1.2;
+}
+
+.main__contacts{
+    font-size: 1.4rem;
+    color: $font__contact-1;
+
+    b{
+        font-weight: 600;
+        color: $font__contact-2;
+    }
+
+    div{
+        margin-top: 20px;
+    }
+}
+
+.main__icons{
+    width: 70px;
+    margin-right: 40px;
+}
+
+.main__img{
+    margin-left: auto;
+    width: 500px;
 }

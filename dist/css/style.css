@@ -294,3 +294,12 @@ html, body {
   z-index: 1000;
   background: linear-gradient(to right, #fff 20%, rgba(255, 255, 255, 0.7) 25%, rgba(255, 255, 255, 0.4) 40%, transparent);
 }
+
+.footer {
+  height: 200px;
+}
+
+.footer__background {
+  width: 100%;
+  height: 100%;
+}

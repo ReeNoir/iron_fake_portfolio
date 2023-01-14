@@ -1,16 +1,38 @@
 .main{
     display: flex;
     margin-top: 100px;
+
+    @media (max-width: 1110px) {
+        flex-direction: column;
+        margin-top: 50px;
+    }
 }
 
 .main__info{
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 54%;
+
+    @media (max-width: 1110px) {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        order: 2;
+    }
+}
+
+.main__img{
+    margin-left: auto;
+    width: 46%;
+
+    @media (max-width: 1110px) {
+        width: 60%;
+        margin: 0 auto 30px;
+    }
 }
 
 .main__greeting{
-    width: 550px;
+    width: 84%;
 
     font-size: 1.4rem;
     line-height: 1.5;
@@ -19,6 +41,36 @@
     h1{
         font-weight: 600;
         font-size: 2rem;
+
+        @media (max-width: 769px) {
+            font-size: 1.6rem;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 1.3rem;
+        }
+
+        @media (max-width: 426px) {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 1110px) {
+        width: 100%;
+    }
+
+    @media (max-width: 769px) {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    @media (max-width: 426px) {
+        font-size: 1rem;
     }
 }
 
@@ -27,6 +79,22 @@
     font-size: 0.95rem;
     color: $font__about-me;
     line-height: 1.2;
+
+    @media (max-width: 769px) {
+        margin: 25px 0;
+
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 500px) {
+        margin: 20px 0;
+
+        font-size: 0.8rem;
+    }
+
+    @media (max-width: 426px) {
+        font-size: 0.7rem;
+    }
 }
 
 .main__contacts{
@@ -41,14 +109,34 @@
     div{
         margin-top: 20px;
     }
+
+    @media (max-width: 769px) {
+        font-size: 1.3rem;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 1.2rem;
+    }
+
+    @media (max-width: 426px) {
+        font-size: 1rem;
+    }
 }
 
 .main__icons{
     width: 70px;
     margin-right: 40px;
-}
 
-.main__img{
-    margin-left: auto;
-    width: 500px;
+    @media (max-width: 769px) {
+        margin-right: 30px;
+    }
+
+    @media (max-width: 500px) {
+        width: 60px;
+        margin-right: 20px;
+    }
+
+    @media (max-width: 426px) {
+        width: 45px;
+    }
 }

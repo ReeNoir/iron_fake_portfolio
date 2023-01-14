@@ -6,7 +6,8 @@ mixin MxGameProject(icon, title,appUrl, playUrl, video, star, downloads)
         .game-project__box 
             .game-project__info 
                 .game-project__stats
-                    .game-project__rating=star  
+                    .game-project__rating
+                        p=star  
                         img(src="img/icons/icons.svg#star", alt="star__icon")
                     .game-project__download=downloads
                         p Downloads

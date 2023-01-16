@@ -1,5 +1,17 @@
 .footer{
     height: 200px;
+
+    @media (max-width: 1110px) {
+        height: 150px;
+    }
+
+    @media (max-width: 769px) {
+        height: 110px;
+    }
+
+    @media (max-width: 425px) {
+        height: 70px;
+    }
 }
 
 .footer__background{

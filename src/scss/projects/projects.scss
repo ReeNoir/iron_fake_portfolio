@@ -15,6 +15,10 @@
 
         letter-spacing: 0.1rem;
     }
+
+    @media (max-width: 425px) {
+        margin-top: 55px;
+    }
 }
 
 .projects__title{
@@ -27,6 +31,10 @@
     @media (max-width: 769px) {
         font-size: 0.9rem;
     }
+
+    @media (max-width: 425px) {
+        font-size: 0.7rem;
+    }
 }
 
 .projects__subtitle{
@@ -36,5 +44,9 @@
 
     @media (max-width: 769px) {
         font-size: 1.3rem;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 1.1rem;
     }
 }

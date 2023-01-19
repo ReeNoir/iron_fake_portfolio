@@ -4,3 +4,11 @@
     max-width: 1250px;
     background: url("../img/Background.png") repeat-y;
 }
+
+.upper{
+    width: 75px;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    z-index: 100000;
+}

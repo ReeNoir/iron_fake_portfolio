@@ -87,6 +87,7 @@ html, body {
 }
 
 .upper {
+  display: none;
   width: 75px;
   position: fixed;
   bottom: 45px;

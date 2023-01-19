@@ -1,4 +1,6 @@
 /* Импорт модулей */ 
-import * as flsFunctions from "./modules/functions.js";
+import * as webpFunctions from "./modules/webpFunc.js";
+import * as upper from "./modules/upper.js";
 
-flsFunctions.isWebp();
+webpFunctions.isWebp();
+upper.scrollUp();

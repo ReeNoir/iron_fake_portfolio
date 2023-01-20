@@ -118,11 +118,8 @@
     text-align: center;
 
     @media (max-width: 769px){
-        width: 70%;
         height: 65px;
         flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
     }
 
     @media (max-width: 425px) {
@@ -173,45 +170,21 @@
 
     @media (max-width: 769px){
         height: 100%;
-        margin: 0;
-        padding: 0 65px 0 0;
+        margin: 0 -4.75vw 0 auto;
+        padding: 0 4.75vw 0 0;
         align-items: center;
     }
 
-    @media (max-width: 680px){
-        padding: 0 50px 0 0;
-    }
-
     @media (max-width: 600px){
-        padding: 0 40px 0 0;
-
         font-size: 0.9rem;
     }
 
-    @media (max-width: 550px){
-        padding: 0 35px 0 0;
-    }
-
-    @media (max-width: 500px){
-        padding: 0 25px 0 0;
-    }
-
-    @media (max-width: 450px){
-        padding: 0 20px 0 0;
-    }
-
     @media (max-width: 425px) {
-        padding: 0 20px 0 0;
-
         font-size: 0.6rem;
     }
 
     @media (max-width: 375px) {
         font-size: 0.4rem;
-    }
-
-    @media (max-width: 350px) {
-        padding: 0 15px 0 0;
     }
 }
 
@@ -264,47 +237,24 @@
     }
 
     @media (max-width: 769px){
+        margin: 0 -4.75vw 0 9.5vw;
+        padding: 0 4.75vw 0 0;
         height: 100%;
-        padding: 0 65px 0 0;
-
+        
         line-height: 1.2;
-    }
-
-    @media (max-width: 680px){
-        padding: 0 50px 0 0;
     }
 
     @media (max-width: 600px){
         font-size: 0.7rem;
     }
 
-    @media (max-width: 550px){
-        padding: 0 45px 0 0;
-    }
-
-    @media (max-width: 500px){
-        padding: 0 30px 0 0;
-    }
-
-    @media (max-width: 450px){
-        padding: 0 20px 0 0;
-    }
-
     @media (max-width: 425px) {
-        padding: 0 25px 0 0;
-
         font-size: 0.6rem;
     }
 
     @media (max-width: 375px) {
-        padding: 0 30px 0 0;
         font-size: 0.4rem;
     }
-
-    @media (max-width: 350px) {
-        padding: 0 18px 0 0;
-    }
-
 }
 
 .game-project__download:after{
@@ -342,15 +292,15 @@
     width: 100%;
     margin-top: 70px;
 
-    @media (max-width: 1110px) {
+    @media (max-width: 1110px){
         margin-top: 50px;
     }
 
     @media (max-width: 769px){
-        width: 30%;
-        margin: 0 auto;
+        margin: 0 auto 0 9.5vw;
+        padding: 0;
+        width: auto;
         align-items: center;
-        justify-content: space-evenly;
     }
 }
 

@@ -1,5 +1,6 @@
 export function scrollUp(){
     const buttonUp = document.querySelector('#upper')
+    const html = document.querySelector('html')
     const mainHeight = document.querySelector('#main').offsetHeight
 
     showButton();
@@ -12,6 +13,9 @@ export function scrollUp(){
     window.addEventListener('scroll', showButton);
 
     window.addEventListener('click', function(){
-        window.scrollTo(0, 0)
+        html.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
     });
 }

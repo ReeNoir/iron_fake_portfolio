@@ -97,29 +97,22 @@
     width: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+
+    text-align: center;
 
     @media (max-width: 769px){
         width: 100%;
+        height: 65px;
+
         flex-direction: row;
+        justify-content: space-evenly;
         order: 2;
+
         position: absolute;
         left: 0;
         bottom: 0;
         z-index: 10000;
-    }
-}
-
-.game-project__stats{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
-    text-align: center;
-
-    @media (max-width: 769px){
-        height: 65px;
-        flex-direction: row;
     }
 
     @media (max-width: 425px) {
@@ -134,8 +127,6 @@
 .game-project__rating{
     display: flex;
     justify-content: center;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
     position: relative;
 
     font-size: 1.33rem;
@@ -162,16 +153,18 @@
     }
 
     @media (max-width: 1110px) {
-        padding-bottom: 35px;
-        margin-bottom: 35px;
-
         font-size: 1.1rem;
     }
 
+    @media (max-width: 900px) {
+        font-size: 1rem;
+    }
+
     @media (max-width: 769px){
+        width: 25%;
         height: 100%;
-        margin: 0 -4.75vw 0 auto;
-        padding: 0 4.75vw 0 0;
+        margin: 0;
+        padding: 0;
         align-items: center;
     }
 
@@ -188,57 +181,28 @@
     }
 }
 
-.game-project__rating:after{
-    content: "";
-    width: 100%;
-    height: 6px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 10;
-    background: radial-gradient($font__portfolio, transparent 60%);
-    border-radius: 100%;
-
-    @media (max-width: 769px){
-        width: 6px;
-        height: 100%;
-        left: 100%;
-        bottom: 0;
-        background: radial-gradient($font__portfolio, transparent 80%);
-    }
-
-    @media (max-width: 600px){
-        width: 4px;
-
-        background: radial-gradient($font__portfolio, transparent 90%);
-    }
-
-    @media (max-width: 425px) {
-        width: 3px;
-    }
-}
-
 .game-project__download{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 40px;
     position: relative;
 
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 0.2rem;
 
     @media (max-width: 1110px) {
-        padding-bottom: 35px;
-
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         letter-spacing: 0.1rem;
     }
 
+    @media (max-width: 900px) {
+        font-size: 1rem;
+    }
+
     @media (max-width: 769px){
-        margin: 0 -4.75vw 0 9.5vw;
-        padding: 0 4.75vw 0 0;
+        padding: 0;
         height: 100%;
         
         line-height: 1.2;
@@ -257,7 +221,58 @@
     }
 }
 
-.game-project__download:after{
+.game-project__line{
+    width: 100%;
+    height: 6px;
+    position: relative;
+
+    @media (max-width: 769px){
+        
+        width: 6px;
+        height: 100%;
+    }
+}
+
+.game-project__line.centre{
+    width: 6px;
+    height: 100%;
+
+    @media (max-width: 769px){
+        display: none;
+    }
+}
+
+.game-project__line.left:before{
+    content: "";
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: radial-gradient($font__portfolio, transparent 60%);
+    border-radius: 100%;
+
+    @media (max-width: 769px){
+        width: 6px;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        background: radial-gradient($font__portfolio, transparent 80%);
+    }
+
+    @media (max-width: 600px){
+        width: 4px;
+
+        background: radial-gradient($font__portfolio, transparent 90%);
+    }
+
+    @media (max-width: 425px) {
+        width: 3px;
+    }
+}
+
+.game-project__line.right:after{
     content: "";
     width: 100%;
     height: 6px;
@@ -271,7 +286,7 @@
     @media (max-width: 769px){
         width: 6px;
         height: 100%;
-        left: 100%;
+        left: 0;
         bottom: 0;
         background: radial-gradient($font__portfolio, transparent 80%);
     }
@@ -290,91 +305,63 @@
 .game-project__links{
     display: flex;
     width: 100%;
-    margin-top: 70px;
-
-    @media (max-width: 1110px){
-        margin-top: 50px;
-    }
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
 
     @media (max-width: 769px){
-        margin: 0 auto 0 9.5vw;
-        padding: 0;
-        width: auto;
-        align-items: center;
+        width: 25%;
+        height: 100%;
+
     }
+}
+
+.game-project__line.centre:before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: radial-gradient($font__portfolio, transparent 80%);
+    border-radius: 100%;
 }
 
 .link__icon{
     box-sizing: content-box;
     width: 75px;
-    padding-left: 45px;
     margin: 0;
 
-    @media (max-width: 1110px) {
-        padding-left: 35px;
+    a > img{
+        width: 100%;
     }
 
-    @media (max-width: 769px){
+    @media (max-width: 1024px){
         width: 60px;
-        padding-left: 15px;
     }
+
+    @media (max-width: 880px){
+        width: 50px;
+    }
+
 
     @media (max-width: 600px){
         width: 45px;
-        padding-left: 10px;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 450px) {
         width: 35px;
-        padding-left: 8px;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 390px) {
         width: 30px;
-        padding-left: 5px;
     }
 }
 
-.link__icon:first-child{
-    padding: 0 45px 0 0;
-    position: relative;
-
-    @media (max-width: 1110px) {
-        padding: 0 35px 0 0;
-    }
-
-    @media (max-width: 769px){
-        padding: 0 15px 0 0;
-    }
-
-    @media (max-width: 600px){
-        padding: 0 10px 0 0;
-    }
-
-    @media (max-width: 425px) {
-        padding: 0 8px 0 0;
-    }
-}
-
-.link__icon:first-child:after{
-    content: "";
-    width: 8px;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-    background: radial-gradient($font__portfolio, transparent 60%);
-    border-radius: 100%;
-
-    @media (max-width: 1110px) {
-        width: 6px;
-
-        background: radial-gradient($font__portfolio, transparent 80%);
-    }
-
-    @media (max-width: 769px){
-        display: none;
+.link__icon:last-child{
+    a > img{
+        width: 88.76%;
     }
 }
 

@@ -5,4 +5,4 @@ import * as addapt from './modules/addaptive.js';
 
 webpFunctions.isWebp();
 upper.scrollUp();
-addapt.changeDom();
+// addapt.changeDom();

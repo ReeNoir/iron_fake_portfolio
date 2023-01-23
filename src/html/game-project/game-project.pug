@@ -5,20 +5,22 @@ mixin MxGameProject(icon, title,appUrl, playUrl, video, star, downloads)
             h2=title
         .game-project__box 
             .game-project__info 
-                .game-project__stats
-                    .game-project__rating
-                        p=star  
-                        img(src="img/icons/icons.svg#star", alt="star__icon")
-                    .game-project__download
-                        p=downloads
-                        p Downloads
+                .game-project__rating
+                    p=star  
+                    img(src="img/icons/icons.svg#star", alt="star__icon")
+                .game-project__line.left
+                .game-project__download
+                    p=downloads
+                    p Downloads
+                .game-project__line.right
                 .game-project__links
-                    .link__icon
-                        a(href=appUrl, target="_blank")
-                            img(src="img/icons/icons.svg#appStore", alt="app-store__icon") 
-                    .link__icon
-                        a(href=playUrl, target="_blank")
-                            img(src="img/icons/icons.svg#playMarket", alt="play-market__icon")
+                        .link__icon
+                            a(href=appUrl, target="_blank")
+                                img(src="img/appStore.png", alt="app-store__icon") 
+                        .game-project__line.centre
+                        .link__icon
+                            a(href=playUrl, target="_blank")
+                                img(src="img/playMarket.png", alt="play-market__icon")
             .game-project__trailer
                 video.game-project__video(src=video autoplay, loop, muted)
                 .game-project__plug       
